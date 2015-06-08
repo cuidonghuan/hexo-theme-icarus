@@ -48,15 +48,15 @@
 </section>
 <% } else if (!index && post.comments && config.duoshuo_shortname){ %>
   <section id="comments">
-    <div id="ds-thread" class="ds-thread" data-thread-key="<%- post.permalink %>" data-title="<%- post.title %>" data-url="<%- post.permalink %>">
-      <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by DuoShuo.</a></noscript>
-      </div>
+     <div id="ds-thread" class="ds-thread" data-thread-key="<%- post.permalink %>" data-title="<%- post.title %>" data-url="<%- post.permalink %>">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by DuoShuo.</a></noscript>
+     </div>
+     <div class="ds-share" data-thread-key="<%- post.permalink %>" data-title="<%- post.title %>" data-url="<%- post.permalink %>">
+         <div class="ds-share-aside-right">
+           <div class="ds-share-aside-inner">
+           </div>
+           <div class="ds-share-aside-toggle">分享到</div>
+         </div>
+     </div>
   </section>
-  <div class="ds-share" data-thread-key="<%- post.permalink %>" data-title="<%- post.title %>" data-url="<%- post.permalink %>">
-      <div class="ds-share-aside-right">
-        <div class="ds-share-aside-inner">
-        </div>
-        <div class="ds-share-aside-toggle">分享到</div>
-      </div>
-  </div>
 <% } %>

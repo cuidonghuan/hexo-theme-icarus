@@ -18,6 +18,11 @@
       </div>
     </div>
     <% if(theme.contacts) { %>
+    <% if(theme.wechat) { %>
+        <div class="contact-info">
+          <img class="qrcode" src="<%= theme.wechat %>">
+        </div>
+        <% } %>
     <div class="contact-info profile-block">
       <table class="contact-list">
         <tr>

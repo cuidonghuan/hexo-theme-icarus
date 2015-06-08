@@ -28,6 +28,9 @@ contacts:
   dribbble: '#'
   rss: /atom.xml
 
+# webchat
+wechat: /css/images/webchat.JPG
+
 # Links
 links:
   Hexo: http://hexo.io

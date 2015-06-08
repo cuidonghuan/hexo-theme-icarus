@@ -26,10 +26,8 @@
     <link rel="alternative" href="<%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml">
   <% } %>
   <% if (theme.favicon){ %>
-    <link rel="icon" href="<%- theme.favicon %>">
+    <link rel="shortcut icon" href="<%- theme.favicon %>" type="image/x-icon">
   <% } %>
-  <link href='//fonts.useso.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
-  <link href="//fonts.useso.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   <%- css('css/style') %>
   <%- css('font-awesome/css/font-awesome.min') %>
   <%- partial('google-analytics') %>

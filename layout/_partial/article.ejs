@@ -26,7 +26,8 @@
         <%- post.content %>
       <% } %>
     </div>
-    <% if(!index){ %>
+
+    <% if(!index && (post.toc != null && post.toc)) { %>
       <%- partial('float_nav') %>
     <% } %>
     <footer class="article-footer">
